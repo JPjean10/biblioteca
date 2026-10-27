@@ -5,11 +5,10 @@ from libros import mostrar_inventario
 if __name__ == "__main__":
     print("=== SISTEMA DE BIBLIOTECA ===\n")
 
-    # 1. El usuario inicia sesión
+   
     login = usuario("ana_gomez", "segura2026*")
     usuario_conectado = login.autenticar_usuario()
 
-    # 2. Si las credenciales son correctas, se crea la sesión de préstamo
     if usuario_conectado:
         gestion_prestamo = Prestamo(usuario_conectado)
 

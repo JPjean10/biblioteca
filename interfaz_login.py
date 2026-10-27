@@ -1,5 +1,8 @@
 import customtkinter as ctk
 import usuario 
+from customtkinter import CTkMessagebox
+
+
 ctk.set_widget_scaling(1.5)
 ctk.set_appearance_mode("Light")
 ventana = ctk.CTk()
@@ -30,6 +33,7 @@ contraseña_caja.grid(  row=1,column=1 , padx=10, pady=10)
 def verificar_login():
         login= usuario.usuario(usuario_caja.get() ,contraseña_caja.get() )
         login.autenticar_usuario()
+        print()
 
 boton_entrar = ctk.CTkButton( container, text="Entrar", font=("arial", 14, "bold"), width=15, fg_color="#1C1D59", text_color="white" ,command=verificar_login)
 boton_entrar.grid(row=2, column=0, columnspan=2, pady=20)
