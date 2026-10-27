@@ -12,7 +12,8 @@ class usuario:
     def __init__(self, usuario, contraseÑa):
             self.usuario = usuario
             self.contraseÑa = contraseÑa
-          
+
+    
 
     def autenticar_usuario(self):
         print("INICIO DE SESIÓN")
